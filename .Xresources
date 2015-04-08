@@ -1,0 +1,41 @@
+! Defining colours from an external file (see xcolors.net for examples)
+#include "/home/satyarth/.colors/colors"
+
+!-- Xft settings -- !
+! Xft.dpi:        96
+! Xft.antialias:  true
+! Xft.rgba:       rgb
+! Xft.hinting:    true
+! Xft.hintstyle:  hintslight
+
+! Defining the font
+
+URxvt*font:xft:Tewi:pixelsize=10
+!URxvt*font:-*-fixed-medium-*-*-*-12-*-*-*-*-*-*-*
+URxvt*boldFont:xft:DejaVuSansMono:pixelsize=10
+! URxvt*font:     xft:DejavuSansMono:pixelsize=10
+! URxvt*font:xft:Terminus:pixelsize=11
+! URxvt*boldFont:xft:Terminus:style=Bold:pixelsize=10
+! URxvt*font:xft:DejaVu Sans Mono:pixelsize=12
+! urxvt*font: -*-lemon-*-*-*-*-*-*-*-*-*-*-*-*
+
+
+URxvt.scrollBar: false
+
+! Transparent background
+URxvt*depth: 32
+URxvt*background: rgba:0000/0000/0000/eeee
+
+! Clickable URLs
+URxvt.perl-ext-common:  default,matcher
+URxvt.url-launcher:      /usr/bin/firefox
+URxvt.matcher.button:   1
+
+URxvt*foreground: white
+
+! Coloured man pages
+URxvt.colorIT:      #87af5f
+URxvt.colorBD:      #d7d7d7
+URxvt.colorUL:      #87afd7
+
+
