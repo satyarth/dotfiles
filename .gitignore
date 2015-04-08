@@ -1,7 +1,11 @@
 ncmpcpp/error.log
+
 mpd/mpdstate
 mpd/playlists/
 mpd/mpd.db
 mpd/mpd.pid
 mpd/mpd.log
 mpd/mpd.error
+
+weechat/logs
+weechat/weechat.log
