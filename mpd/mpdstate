@@ -1,0 +1,30 @@
+sw_volume: 87
+audio_device_state:1:my_fifo
+audio_device_state:1:Sound Card
+state: pause
+current: 1
+time: 116
+random: 1
+repeat: 1
+single: 0
+consume: 0
+crossfade: 5
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:The Black Keys - 2010 - Brothers [Promotional Release, 15 Tracks, V0 VBR MP3]/01 - Everlasting Light.mp3
+1:The Black Keys - 2010 - Brothers [Promotional Release, 15 Tracks, V0 VBR MP3]/02 - Next Girl.mp3
+2:The Black Keys - 2010 - Brothers [Promotional Release, 15 Tracks, V0 VBR MP3]/03 - Tighten Up.mp3
+3:The Black Keys - 2010 - Brothers [Promotional Release, 15 Tracks, V0 VBR MP3]/04 - Howlin' For You.mp3
+4:The Black Keys - 2010 - Brothers [Promotional Release, 15 Tracks, V0 VBR MP3]/05 - She's Long Gone.mp3
+5:The Black Keys - 2010 - Brothers [Promotional Release, 15 Tracks, V0 VBR MP3]/06 - Black Mud.mp3
+6:The Black Keys - 2010 - Brothers [Promotional Release, 15 Tracks, V0 VBR MP3]/07 - The Only One.mp3
+7:The Black Keys - 2010 - Brothers [Promotional Release, 15 Tracks, V0 VBR MP3]/08 - Too Afraid to Love You.mp3
+8:The Black Keys - 2010 - Brothers [Promotional Release, 15 Tracks, V0 VBR MP3]/09 - Ten Cent Pistol.mp3
+9:The Black Keys - 2010 - Brothers [Promotional Release, 15 Tracks, V0 VBR MP3]/10 - Sinister Kid.mp3
+10:The Black Keys - 2010 - Brothers [Promotional Release, 15 Tracks, V0 VBR MP3]/11 - The Go Getter.mp3
+11:The Black Keys - 2010 - Brothers [Promotional Release, 15 Tracks, V0 VBR MP3]/12 - I'm Not the One.mp3
+12:The Black Keys - 2010 - Brothers [Promotional Release, 15 Tracks, V0 VBR MP3]/13 - Unknown Brother.mp3
+13:The Black Keys - 2010 - Brothers [Promotional Release, 15 Tracks, V0 VBR MP3]/14 - Never Give You Up.mp3
+14:The Black Keys - 2010 - Brothers [Promotional Release, 15 Tracks, V0 VBR MP3]/15 - These Days.mp3
+playlist_end
