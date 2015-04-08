@@ -1,0 +1,32 @@
+super + z
+	amixer -c 0 set Master 1dB- && bash ~/.scripts/displayvolume.sh
+
+super + a
+	amixer -c 0 set Master 1dB+ && bash ~/.scripts/displayvolume.sh
+
+super+shift + z
+	mpc volume -3
+
+super+shift + a
+	mpc volume +3
+
+super + x
+	mpc toggle && bash ~/.scripts/displaympd.sh
+
+super + s
+	mpc prev && bash ~/.scripts/displaympd.sh
+
+super + d
+	mpc next && bash ~/.scripts/displaympd.sh
+
+super + t
+	rxvt-unicode
+
+super + c
+	~/.panel/dzen.sh
+
+super + w
+	/home/satyarth/.scripts/./scrot.sh
+
+super+shift + w
+	bash /home/satyarth/.scripts/randomwall.sh
