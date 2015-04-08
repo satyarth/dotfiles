@@ -1,8 +1,8 @@
 super + z
-	amixer -c 0 set Master 1dB- && bash ~/.scripts/displayvolume.sh
+	amixer -c 0 set Master 1dB- && ~/dotfiles/scripts/popups/./volume.sh | ~/dotfiles/scripts/./dzen-popup.sh
 
 super + a
-	amixer -c 0 set Master 1dB+ && bash ~/.scripts/displayvolume.sh
+	amixer -c 0 set Master 1dB+ && ~/dotfiles/scripts/popups/./volume.sh | ~/dotfiles/scripts/./dzen-popup.sh
 
 super+shift + z
 	mpc volume -3
@@ -11,13 +11,13 @@ super+shift + a
 	mpc volume +3
 
 super + x
-	mpc toggle && bash ~/.scripts/displaympd.sh
-
+	mpc toggle && ~/dotfiles/scripts/popups/./mpd.sh
+	
 super + s
-	mpc prev && bash ~/.scripts/displaympd.sh
+	mpc prev && ~/dotfiles/scripts/popups/./mpd.sh
 
 super + d
-	mpc next && bash ~/.scripts/displaympd.sh
+	mpc next && ~/dotfiles/scripts/popups/./mpd.sh
 
 super + t
 	rxvt-unicode
