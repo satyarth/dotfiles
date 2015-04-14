@@ -26,7 +26,7 @@ super + c
 	~/.panel/dzen.sh
 
 super + w
-	/home/satyarth/.scripts/./scrot.sh
+	~/dotfiles/scripts/./scrot.sh
 
 super+shift + w
-	bash /home/satyarth/.scripts/randomwall.sh
+	~/dotfiles/scripts/./randomwall.sh
