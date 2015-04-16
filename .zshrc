@@ -1,9 +1,3 @@
-export ZSH=$HOME/.oh-my-zsh
-
-source $ZSH/oh-my-zsh.sh
-
-plugins=(git)
-
 # Set up the prompt
 
 autoload -Uz promptinit
@@ -13,8 +7,6 @@ autoload -U colors && colors
 # PROMPT="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg_no_bold[yellow]%}%1~ %{$reset_color%}"
 
 PROMPT="%{$fg[green]%}└── %{$fg_bold[magenta]%}%1~ %{$fg[green]%}─╼ %{$reset_color%}"
-
-RPROMPT="%{$fg[magenta]%}$(git_prompt_info)%{$reset_color%} o_O $(git_prompt_status)%{$reset_color%}"
 
 setopt histignorealldups sharehistory
 
@@ -47,3 +39,5 @@ zstyle ':completion:*' verbose true
 
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
+
+source ~/.aliases
