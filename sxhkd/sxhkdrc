@@ -26,7 +26,7 @@ super + c
 	~/.panel/dzen.sh
 
 super + w
-	~/dotfiles/scripts/./scrot.sh
+	~/dotfiles/scripts/./scrot.sh && echo "Screenshot taken!" | ~/dotfiles/scripts/./dzen-popup.sh
 
 super+shift + w
 	~/dotfiles/scripts/./randomwall.sh
