@@ -1,3 +1,5 @@
+#!/bin/bash
+
 dzen2bg="#3f3f3f"
 dzen2fg="#ffffff"
 font='Tewi'
