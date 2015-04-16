@@ -11,8 +11,9 @@
 ! Defining the font
 
 URxvt*font:xft:Tewi:pixelsize=10
-!URxvt*font:-*-fixed-medium-*-*-*-12-*-*-*-*-*-*-*
-URxvt*boldFont:xft:DejaVuSansMono:pixelsize=10
+URxvt*boldFont:xft:Tewi:pixelsize=10
+!URxvt*boldFont:-*-fixed-medium-*-*-*-12-*-*-*-*-*-*-*
+!URxvt*boldFont:xft:DejaVuSansMono:pixelsize=10
 ! URxvt*font:     xft:DejavuSansMono:pixelsize=10
 ! URxvt*font:xft:Terminus:pixelsize=11
 ! URxvt*boldFont:xft:Terminus:style=Bold:pixelsize=10
