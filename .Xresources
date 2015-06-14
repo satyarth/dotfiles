@@ -28,9 +28,11 @@ URxvt*depth: 32
 URxvt*background: rgba:0000/0000/0000/eeee
 
 ! Clickable URLs
-URxvt.perl-ext-common:  default,matcher
+URxvt.perl-ext-common:  default,matcher,clipboard
 URxvt.url-launcher:      /usr/bin/firefox
 URxvt.matcher.button:   1
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste 
+URxvt.iso14755: False
 
 URxvt*foreground: white
 
