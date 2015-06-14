@@ -12,6 +12,8 @@ ln -s $DOTFILES_DIR/ncmpcpp/ ~/.ncmpcpp
 ln -s $DOTFILES_DIR/mpd/ ~/.mpd
 ln -s $DOTFILES_DIR/weechat/ ~/.weechat
 ln -s $DOTFILES_DIR/userChrome.css ~/.mozilla/firefox/$FIREFOX_PROFILE.default/chrome/userChrome.css
+ln -s $DOTFILES_DIR/.zshrc ~/.zshrc
+ln -s $DOTFILES_DIR/.aliases ~/.aliases
 
 # Kill recursive symlinks
 find $DOTFILES_DIR -lname '*' -exec rm {} \;

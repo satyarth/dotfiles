@@ -106,10 +106,12 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+USER=$(whoami)
+HOSTNAME=$(hostname)
 
 # colors the prompt, with the format "name@host current-folder". In the second line, the colors are "01;32" and "00;31"
 # export PS1='\[\033[01;32m\]\u@\h \[\033[01;35m\]\W \$ \[\033[00m\]'
-export PS1='\[\033[01;32m\]└──\[\033[01;35m\] \W \[\033[01;32m\]─╼ \[\033[00m\]'
+export PS1='\[\033[01;32m\]└──\[\033[01;35m\] $USER@$HOSTNAME \W \[\033[01;32m\]─╼ \[\033[00m\]'
 
 # colored man pages
 man() {

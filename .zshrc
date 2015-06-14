@@ -6,7 +6,20 @@ autoload -U colors && colors
 
 # PROMPT="%{$fg[red]%}%n%{$reset_color%}@%{$fg[blue]%}%m %{$fg_no_bold[yellow]%}%1~ %{$reset_color%}"
 
-PROMPT="%{$fg[green]%}└── %{$fg_bold[magenta]%}%1~ %{$fg[green]%}─╼ %{$reset_color%}"
+PROMPT="%{$fg[green]%} ╾─ %{$fg_bold[magenta]%}%1~ %{$fg[green]%}─╼ %{$reset_color%}"
+
+USER=$(whoami)
+HOSTNAME=$(hostname)
+
+if [ "$HOSTNAME" = ebanaut ]; then
+    RPROMPT="%{$fg_bold[blue]%}ebanaut%{$reset_color%}"
+else
+    RPROMPT="%{$fg_bold[blue]%}$USER%{$fg_bold[magenta]%}@%{$fg_bold[yellow]%}$HOSTNAME %{$fg[green]%}%{$reset_color%}"
+fi
+
+
+
+export PATH="$PATH:$HOME/dotfiles/scripts/"
 
 setopt histignorealldups sharehistory
 
