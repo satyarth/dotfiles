@@ -12,7 +12,7 @@ USER=$(whoami)
 HOSTNAME=$(hostname)
 
 if [ "$HOSTNAME" = ebanaut ]; then
-    RPROMPT="%{$fg_bold[blue]%}ebanaut%{$reset_color%}"
+    RPROMPT=""
 else
     RPROMPT="%{$fg_bold[blue]%}$USER%{$fg_bold[magenta]%}@%{$fg_bold[yellow]%}$HOSTNAME %{$fg[green]%}%{$reset_color%}"
 fi
