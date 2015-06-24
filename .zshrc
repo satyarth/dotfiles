@@ -31,6 +31,8 @@ HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
+source ~/.aliases
+
 # Use modern completion system
 autoload -Uz compinit
 compinit
