@@ -1,24 +1,38 @@
 DOTS=`pwd`
 
-all: media \
-	xorg	
+all: xorg \
+	shell \
+	media	
 
-remove-all: xorg-remove \
-	media-remove
+remove-all: xorg-rm \
+	shell-rm \
+	media-rm
 
 xorg:
 	-ln -s ${DOTS}/.xinitrc ~/.xinitrc
 	-ln -s ${DOTS}/.Xresources ~/.Xresources
 	-ln -s ${DOTS}/herbstluftwm ~/.config/herbstluftwm
+	-ln -s ${DOTS}/sxhkd ~/.config/sxhkd
 
-xorg-remove:
+xorg-rm:
 	-@rm -f ~/.xinitrc
 	-@rm -f ~/.Xresources
 	-@rm -rf ~/.config/herbstluftwm
+	-@rm -rf ~/.config/sxhkd
+
+shell:
+	-ln -s ${DOTS}/.zshrc ~/.zshrc
+	-ln -s ${DOTS}/.bashrc ~/.bashrc
+	-ln -s ${DOTS}/.aliases	~/.aliases
+
+shell-rm:
+	-@rm -f ~/.zshrc
+	-@rm -f ~/.bashrc
+	-@rm -f ~/.aliases
 
 media:
 	-ln -s ${DOTS}/.ncmpcpp ~/.ncmpcpp
 
 
-media-remove:
+media-rm:
 	-@rm -rf ~/.ncmpcpp
