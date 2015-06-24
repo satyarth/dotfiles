@@ -1,5 +1,6 @@
 ! Defining colours from an external file (see xcolors.net for examples)
-#include "/home/satyarth/dotfiles/colors/colorful_colors"
+#include "/home/sat/dotfiles/colors/colorful_colors"
+
 
 !-- Xft settings -- !
 ! Xft.dpi:        96
