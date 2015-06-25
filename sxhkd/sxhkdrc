@@ -23,7 +23,7 @@ super + t
 	urxvt
 
 super + c
-	~/.panel/dzen.sh
+	~/dotfiles/scripts/popups/info.sh
 
 super + w
 	~/dotfiles/scripts/./scrot.sh && echo "Screenshot taken!" | ~/dotfiles/scripts/./dzen-popup.sh
