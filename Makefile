@@ -8,6 +8,10 @@ remove-all: xorg-rm \
 	shell-rm \
 	media-rm
 
+headless: shell
+
+headless-rm: shell-rm
+
 xorg:
 	-ln -s ${DOTS}/.xinitrc ~/.xinitrc
 	-ln -s ${DOTS}/.Xresources ~/.Xresources
@@ -32,7 +36,8 @@ shell-rm:
 
 media:
 	-ln -s ${DOTS}/.ncmpcpp ~/.ncmpcpp
-
+	-ln -s ${DOTS}/mpd.conf	~/.config/mpd/
 
 media-rm:
 	-@rm -rf ~/.ncmpcpp
+	-@rm -f ~/.config/mpd/mpd.conf
