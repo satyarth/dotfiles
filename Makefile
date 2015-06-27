@@ -17,12 +17,14 @@ xorg:
 	-ln -s ${DOTS}/.Xresources ~/.Xresources
 	-ln -s ${DOTS}/herbstluftwm ~/.config/herbstluftwm
 	-ln -s ${DOTS}/sxhkd ~/.config/sxhkd
+	-ln -s ${DOTS}/.vimperatorrc ~/.vimperatorrc
 
 xorg-rm:
 	-@rm -f ~/.xinitrc
 	-@rm -f ~/.Xresources
 	-@rm -rf ~/.config/herbstluftwm
 	-@rm -rf ~/.config/sxhkd
+	-@rm -f ~/.vimperatorrc
 
 shell:
 	-ln -s ${DOTS}/.zshrc ~/.zshrc
