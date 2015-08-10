@@ -2,7 +2,7 @@
 
 if [ -z "$1" ]
     then
-    	DIRECTORY='/home/satyarth/media'
+    	DIRECTORY='/home/sat/media'
     else
         DIRECTORY=$1
 fi
