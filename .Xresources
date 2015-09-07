@@ -1,5 +1,5 @@
 ! Defining colours from an external file (see xcolors.net for examples)
-#include "/home/sat/dotfiles/colors/colorful_colors"
+#include "/home/sat/dotfiles/colors/colors.x"
 
 
 !-- Xft settings -- !
@@ -32,7 +32,7 @@ URxvt*background: rgba:0000/0000/0000/eeee
 URxvt.perl-ext-common:  default,matcher,clipboard
 URxvt.url-launcher:      /usr/bin/firefox
 URxvt.matcher.button:   1
-URxvt.keysym.Shift-Control-V: perl:clipboard:paste 
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 URxvt.iso14755: False
 
 URxvt*foreground: white
@@ -41,5 +41,3 @@ URxvt*foreground: white
 URxvt.colorIT:      #87af5f
 URxvt.colorBD:      #d7d7d7
 URxvt.colorUL:      #87afd7
-
-
