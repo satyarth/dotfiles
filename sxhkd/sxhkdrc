@@ -11,10 +11,10 @@ super+shift + a
 	mpc volume +3
 
 super+shift + x
-	xbacklight -5
+	xbacklight -5 && xbacklight | ~/dotfiles/scripts/./dzen-popup.sh
 
 super+shift + s
-	xbacklight +6
+	xbacklight +6 && xbacklight | ~/dotfiles/scripts/./dzen-popup.sh
 
 super + x
 	mpc toggle && ~/dotfiles/scripts/popups/./mpd.sh
