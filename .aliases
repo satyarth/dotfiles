@@ -1,3 +1,2 @@
 alias ls='ls --color=auto'
 alias la='ls -A'
-alias gc= 'git commit -m '
