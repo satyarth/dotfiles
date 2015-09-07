@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ~/.colors/colors.sh
+source ~/dotfiles/colors/colors.sh
 
 # this is a simple config for herbstluftwm
 
@@ -99,8 +99,8 @@ hc keybind $Mod-Shift-Tab   cycle_all -1
 # hc keybind $Mod-i jumpto urgent
 
 # colors
-hc set frame_border_active_color $color2
-hc set frame_border_normal_color $color4
+hc set frame_border_active_color $color4
+hc set frame_border_normal_color $color2
 hc set frame_bg_normal_color none
 hc set frame_bg_active_color none
 hc set frame_border_width 0
@@ -112,8 +112,8 @@ hc set frame_gap 0
 hc set frame_padding 0
 
 hc set window_border_width 2
-hc set window_border_normal_color none
-hc set window_border_active_color $color6
+hc set window_border_normal_color $color2
+hc set window_border_active_color $color1
 hc set window_gap 8
 
 hc set frame_bg_transparent 1
