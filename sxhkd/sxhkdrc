@@ -10,9 +10,15 @@ super+shift + z
 super+shift + a
 	mpc volume +3
 
+super+shift + x
+	xbacklight -5
+
+super+shift + s
+	xbacklight +6
+
 super + x
 	mpc toggle && ~/dotfiles/scripts/popups/./mpd.sh
-	
+
 super + s
 	mpc prev && ~/dotfiles/scripts/popups/./mpd.sh
 
