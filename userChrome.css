@@ -1,4 +1,4 @@
-	
+	@import url('colors.css')
 
     /* AGENT_SHEET */
     @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
@@ -7,8 +7,8 @@
     #appcontent > #content > tabbox > tabpanels {
     background: #181818 !important;
     }
-               
-               
+
+
     tabs#tabbrowser-tabs, tabs#tabbrowser-tabs * {
     -moz-appearance: none !important;
     border-radius: 0px !important;
@@ -20,7 +20,7 @@
     max-height: 18px !important;
     min-height: 18px !important;
     }
-         
+
     tabs#tabbrowser-tabs {
     background: #A6E25F !important;
     font-weight: normal !important;
@@ -30,21 +30,21 @@
     padding-top: 0px !important;
     border-bottom: 0px !important;
     }
-     
+
     .tabbrowser-tab {
     color: #fafafa !important;
     background: #1a1a1a !important;
     margin-left: 1px !important;
     border-bottom: 0px !important;
     }
-     
+
     .tabbrowser-tab[selected=true] {
     color: #FF8EAF !important;
     background: #363636 !important; /*#202020*/
     border-bottom: 0px !important;
     box-shadow: none !important;
     }
-         
+
     .tabbrowser-tab .tab-text {
     margin-left: 3px !important;
     margin-right: 3px !important;
@@ -53,12 +53,12 @@
     font-family: fixed !important;
     font-size: 12px !important;
     }
-     
+
     .tabbrowser-tabs:not([drag=detach]) > .tabbrowser-tab:not([pinned])[fadein] {
     min-width: 30px !important;
     max-width: 100% !important;
     }
-     
+
     /* HIDE */
     toolbarbutton#appmenu-toolbar-button,
     toolbarbutton#alltabs-button,
@@ -81,28 +81,28 @@
     .tab-background-end {
     display: none !important;
     }
-     
+
     #TabsToolbar::after { display: none !important; }
     #navigator-toolbox { border: 0 !important; margin-bottom: -1px !important; }
     .tabbrowser-tab::before, .tabbrowser-tab::after { background: url("none") !important; }
-     
+
     .tabbrowser-tab * {
     background: url(none) !important; list-style-image: none !important;
     margin: 0 0 0 0 !important; padding: 0 0 0 0 !important; -moz-appearance: none !important;
     }
-     
+
     #TabsToolbar, #tabbrowser-tabs {
     -moz-appearance: none !important;
     margin-left: -15px !important; margin-right: -8px !important;
     }
-     
+
     /* vimperator */
     /* AGENT_SHEET */
     #liberator-statusline {
     min-height: 13px !important;
     max-height: 13px !important;
     }
-     
+
     /* scrollbar */
     scrollbar {
     -moz-appearance: none !important;
@@ -111,35 +111,34 @@
     z-index: 2147483647;
     padding: 0px 0px 0px 0px!important;
     }
-     
+
     scrollbar[orient="vertical"] {
     -moz-margin-start: -3px;
     min-width: 3px;
     max-width: 3px;
     padding: 0px 0px 0px 0px!important;
     }
-     
+
     scrollbar[orient="horizontal"] {
     margin-top: -3px;
     min-height: 3px;
     max-height: 3px;
     }
-     
+
     scrollbar thumb {
     -moz-appearance: none !important;
     border: none !important;
     border-radius: 0 !important;
     background: #3C3748!important;
     }
-     
+
     scrollbar[orient="vertical"] thumb{
     min-height: 100px!important;
     }
-     
+
     scrollbar[orient="horizontal"] thumb{
     min-width: 100px!important;
     }
     scrollbar scrollbarbutton{
     visibility: collapse!important;
     }
-
