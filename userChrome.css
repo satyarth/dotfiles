@@ -1,4 +1,4 @@
-	@import url('colors.css')
+@import url('colors/colors.css');
 
     /* AGENT_SHEET */
     @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
@@ -22,7 +22,7 @@
     }
 
     tabs#tabbrowser-tabs {
-    background: #A6E25F !important;
+    background: var(--color13) !important;
     font-weight: normal !important;
     text-align: center !important;
     padding-top: 0px !important;
@@ -32,14 +32,14 @@
     }
 
     .tabbrowser-tab {
-    color: #fafafa !important;
+    color: var(--color1) !important;
     background: #1a1a1a !important;
     margin-left: 1px !important;
-    border-bottom: 0px !important;
+    border-bottom: 1px !important;
     }
 
     .tabbrowser-tab[selected=true] {
-    color: #FF8EAF !important;
+    color: var(--color12) !important;
     background: #363636 !important; /*#202020*/
     border-bottom: 0px !important;
     box-shadow: none !important;
@@ -129,7 +129,7 @@
     -moz-appearance: none !important;
     border: none !important;
     border-radius: 0 !important;
-    background: #3C3748!important;
+    background: var(--color1) !important;
     }
 
     scrollbar[orient="vertical"] thumb{
