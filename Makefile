@@ -2,7 +2,7 @@ DOTS=`pwd`
 
 all: xorg \
 	shell \
-	media	
+	media
 
 remove-all: xorg-rm \
 	shell-rm \
@@ -39,7 +39,9 @@ shell-rm:
 media:
 	-ln -s ${DOTS}/.ncmpcpp ~/.ncmpcpp
 	-ln -s ${DOTS}/mpd.conf	~/.config/mpd/
+	-ln -s ${DOTS}/atom	~/.atom
 
 media-rm:
 	-@rm -rf ~/.ncmpcpp
+	-@rm -rf ~/.atom
 	-@rm -f ~/.config/mpd/mpd.conf
