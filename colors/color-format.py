@@ -33,8 +33,15 @@ def output_css(colors):
             outfile.write('--color' + str(index) + ':' + colors[index] + ';\n')
         outfile.write("}\n")
 
+def output_less(colors):
+    with open('colors.less', 'w') as outfile:
+        for index in colors:
+            outfile.write('@color' + str(index) + ':' + colors[index] + '\n')
+
+
 colors = read(args)
 
 output_x(colors)
 output_sh(colors)
 output_css(colors)
+output_less(colors)
