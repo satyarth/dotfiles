@@ -15,7 +15,7 @@ headless-rm: shell-rm
 xorg:
 	-ln -s ${DOTS}/.xinitrc ~/.xinitrc
 	-ln -s ${DOTS}/.Xresources ~/.Xresources
-	-ln -s ${DOTS}/herbstluftwm ~/.config/herbstluftwm
+	-ln -s ${DOTS}/herbstluftwm ~/.config/
 	-ln -s ${DOTS}/sxhkd ~/.config/sxhkd
 	-ln -s ${DOTS}/.vimperatorrc ~/.vimperatorrc
 
@@ -39,6 +39,7 @@ shell-rm:
 media:
 	-ln -s ${DOTS}/.ncmpcpp ~/.ncmpcpp
 	-ln -s ${DOTS}/mpd.conf	~/.config/mpd/
+	-rm -r ~/.atom
 	-ln -s ${DOTS}/atom	~/.atom
 
 media-rm:
