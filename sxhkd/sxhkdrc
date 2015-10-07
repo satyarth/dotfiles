@@ -17,13 +17,13 @@ super+shift + s
 	xbacklight +6 && xbacklight | ~/dotfiles/scripts/./popup.sh
 
 super + x
-	mpc toggle && ~/dotfiles/scripts/popups/./mpd.sh
+	mpc toggle && mpc | head -n1 | ~/dotfiles/scripts/./popup.sh
 
 super + s
-	mpc prev && ~/dotfiles/scripts/popups/./mpd.sh
+	mpc prev && mpc | head -n1 | ~/dotfiles/scripts/./popup.sh
 
 super + d
-	mpc next && ~/dotfiles/scripts/popups/./mpd.sh
+	mpc next && mpc | head -n1 | ~/dotfiles/scripts/./popup.sh
 
 super + t
 	urxvt
