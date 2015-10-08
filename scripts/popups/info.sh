@@ -44,5 +44,5 @@ currenttime() {
 }
 
 #!/bin/bash
-panel="$(currenttime) // $(battery) // $(temperature)"
+panel="$(currenttime) %{R} $(battery) %{R} $(temperature)"
 echo $panel
