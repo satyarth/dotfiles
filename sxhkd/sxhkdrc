@@ -29,10 +29,10 @@ super + t
 	urxvt
 
 super + c
-	~/dotfiles/scripts/popups/info.sh
+	~/dotfiles/scripts/popups/./info.sh | ~/dotfiles/scripts/./popup.sh
 
 super + w
 	~/dotfiles/scripts/./scrot.sh && echo "Screenshot taken!" | ~/dotfiles/scripts/./popup.sh
 
 super+shift + w
-	~/dotfiles/scripts/./randomwall.sh
+	~/dotfiles/scripts/./randomwall.sh && echo "Random wallpaper!" | ~/dotfiles/scripts/./popup.sh
