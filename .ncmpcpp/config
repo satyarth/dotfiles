@@ -1,5 +1,6 @@
 mpd_music_dir = "~/Music/"  
 
+song_columns_list_format = "(10)[blue]{l} (30)[green]{a} (30)[magenta]{b} (50)[yellow]{t}"  
 titles_visibility = "no"
 statusbar_visibility = "yes"
 header_visibility = "no"
