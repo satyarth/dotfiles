@@ -2,3 +2,4 @@ alias ls='ls --color=auto'
 alias la='ls -A'
 alias s='subl3'
 alias ix="curl -F 'f:1=<-' ix.io"
+alias gsc="git stash && git stash clear"
