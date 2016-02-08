@@ -1,3 +1,6 @@
+super + e
+	exec rofi -show run -terminal termite -lines 3 -eh 2 -opacity 90 -bw 0 -bc "#2f343f" -bg "#2f343f" -hlbg "#2f343f" -hlfg "#c79595" -fg "#95c7ae" -font "Terminus 24"
+
 super + z
 	amixer -c 0 set Master 1dB- && ~/dotfiles/scripts/popups/./volume.sh | ~/dotfiles/scripts/./popup.sh
 

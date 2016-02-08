@@ -20,6 +20,7 @@ fi
 
 
 export PATH="$PATH:$HOME/dotfiles/scripts/"
+export PATH="$PATH:$HOME/.gem/ruby/2.2.0/bin/"
 
 setopt histignorealldups sharehistory
 

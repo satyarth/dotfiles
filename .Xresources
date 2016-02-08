@@ -11,9 +11,9 @@
 
 ! Defining the font
 
-URxvt*font:xft:Tewi:pixelsize=10
-URxvt*boldFont:xft:Tewi:pixelsize=10
-!URxvt*boldFont:-*-fixed-medium-*-*-*-12-*-*-*-*-*-*-*
+URxvt*font:xft:Tewi:pixelsize=11
+URxvt*boldFont:xft:Tewi:pixelsize=11
+!URxvt*font:-*-fixed-medium-*-*-*-10-*-*-*-*-*-*-*
 !URxvt*boldFont:xft:DejaVuSansMono:pixelsize=10
 ! URxvt*font:     xft:DejavuSansMono:pixelsize=10
 ! URxvt*font:xft:Terminus:pixelsize=11
@@ -24,7 +24,7 @@ URxvt*boldFont:xft:Tewi:pixelsize=10
 
 URxvt.scrollBar: false
 
-! Transparent background
+Transparent background
 URxvt*depth: 32
 URxvt*background: rgba:0000/0000/0000/eeee
 
@@ -36,8 +36,3 @@ URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 URxvt.iso14755: False
 
 URxvt*foreground: white
-
-! Coloured man pages
-URxvt.colorIT:      #87af5f
-URxvt.colorBD:      #d7d7d7
-URxvt.colorUL:      #87afd7
