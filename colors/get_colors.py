@@ -1,20 +1,13 @@
-import sys
-import argparse
+from chromatography import Chromatography, bright_pixel
 
-p = argparse.ArgumentParser()
-p.add_argument("filename")
-args = p.parse_args()
+c = Chromatography('/tmp/wall.jpg')
+p = c.get_palette(16, bright_pixel)
 
-def read(args):
-    colors = {}
-    with open(args.filename) as file:
-        for row in file:
-            if 'color' in row:
-                row = row.replace('*color','')
-                index = int(row[0:row.find(':')].strip())
-                color = row[row.find('#'):].strip()
-                colors[index] = color
-    return colors
+
+def rgb_to_hex(rgb):
+    return '#%02x%02x%02x' % rgb
+
+colors = {i: rgb_to_hex(p[i]) for i in range(16)}
 
 def output_x(colors):
     with open('colors.x', 'w') as outfile:
@@ -37,9 +30,6 @@ def output_less(colors):
     with open('colors.less', 'w') as outfile:
         for index in colors:
             outfile.write('@color' + str(index) + ':' + colors[index] + ';\n')
-
-
-colors = read(args)
 
 output_x(colors)
 output_sh(colors)
