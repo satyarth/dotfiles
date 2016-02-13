@@ -30,11 +30,12 @@ shell:
 	-ln -s ${DOTS}/.zshrc ~/.zshrc
 	-ln -s ${DOTS}/.bashrc ~/.bashrc
 	-ln -s ${DOTS}/.aliases	~/.aliases
-
+	-ln -s ${DOTS}/vimrc ~/.vimrc
 shell-rm:
 	-@rm -f ~/.zshrc
 	-@rm -f ~/.bashrc
 	-@rm -f ~/.aliases
+	-@rm -f ~/.vimrc
 
 media:
 	-ln -s ${DOTS}/.ncmpcpp ~/.ncmpcpp
