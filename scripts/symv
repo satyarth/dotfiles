@@ -1,0 +1,5 @@
+#!/bin/bash
+# Script to move a file/dir and leave behind a symlink to the new location
+
+mv "$1" "$2"
+ln -s "$(realpath "$2"/"$(basename "$1")")" "$1"
