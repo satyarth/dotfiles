@@ -17,10 +17,10 @@ super+shift + a
 	mpc volume +3
 
 super+shift + x
-	xbacklight -5 && xbacklight | ~/dotfiles/scripts/./popup.sh
+	light -U 5 && light -G | ~/dotfiles/scripts/./popup.sh
 
 super+shift + s
-	xbacklight +6 && xbacklight | ~/dotfiles/scripts/./popup.sh
+	light -A 6 && light -G | ~/dotfiles/scripts/./popup.sh
 
 super + x
 	mpc toggle && mpc | head -n1 | ~/dotfiles/scripts/./popup.sh
