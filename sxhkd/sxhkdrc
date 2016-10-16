@@ -8,7 +8,7 @@ super + a
 	amixer -c 0 set Master 1dB+ && ~/dotfiles/scripts/popups/./volume.sh | ~/dotfiles/scripts/./popup.sh
 
 super + m
-	amixer sset Master toggle
+	amixer sset Master toggle | tail -n 1 | cut -d ' ' -f 8 | ~/dotfiles/scripts/./popup.sh
 
 super+shift + z
 	mpc volume -3
