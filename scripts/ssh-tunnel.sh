@@ -2,7 +2,7 @@
 
 # Source: https://juliansimioni.com/blog/howto-access-a-linux-machine-behind-a-home-router-with-ssh-tunnels/
 
-public_host=s@satyarth.me
+public_host=s@janky.satyarth.me
 
 createTunnel() {
     /usr/bin/ssh -f -N -R 10022:localhost:22 -L19922:$public_host:22 $public_host
