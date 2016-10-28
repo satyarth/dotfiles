@@ -22,7 +22,7 @@ fi
 export PATH="$PATH:$HOME/dotfiles/scripts/"
 export PATH="$PATH:$HOME/.gem/ruby/2.2.0/bin/"
 
-setopt histignorealldups sharehistory
+setopt histignorealldups
 
 # Use emacs keybindings even if our EDITOR is set to vi
 bindkey -e
