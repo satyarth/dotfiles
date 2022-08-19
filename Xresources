@@ -1,9 +1,9 @@
 ! Defining colours from an external file (see xcolors.net for examples)
-#include "/home/sat/dotfiles/colors/colors.x"
+!#include "/home/boi/dotfiles/colors/colors.x"
 
 
 !-- Xft settings -- !
-! Xft.dpi:        96
+ Xft.dpi:       144 
 ! Xft.antialias:  true
 ! Xft.rgba:       rgb
 ! Xft.hinting:    true
@@ -11,12 +11,12 @@
 
 ! Defining the font
 
-URxvt*font:xft:Tewi:pixelsize=12
-URxvt*boldFont:xft:Tewi:pixelsize=11
+!URxvt*font:xft:Terminus:pixelsize=12
+!URxvt*boldFont:xft:Terminus:pixelsize=11
 !URxvt*font:-*-fixed-medium-*-*-*-10-*-*-*-*-*-*-*
 ! URxvt*font:xft:Tamsyn:pixelsize=12
-!URxvt*boldFont:xft:DejaVuSansMono:pixelsize=10
-! URxvt*font:     xft:DejavuSansMono:pixelsize=10
+URxvt*boldFont:xft:JuliaMono:style=Bold:pixelsize=11
+URxvt*font:     xft:JuliaMono:pixelsize=11
 ! URxvt*font:xft:Terminus:pixelsize=11
 ! URxvt*boldFont:xft:Terminus:style=Bold:pixelsize=10
 ! URxvt*font:xft:DejaVu Sans Mono:pixelsize=12
@@ -25,7 +25,7 @@ URxvt*boldFont:xft:Tewi:pixelsize=11
 
 URxvt.scrollBar: false
 
-Transparent background
+! Transparent background
 URxvt*depth: 32
 URxvt*background: rgba:0000/0000/0000/eeee
 
@@ -37,3 +37,28 @@ URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 URxvt.iso14755: False
 
 URxvt*foreground: white
+!Negro-----------
+*color0: #151515
+*color8: #696969
+!Rojo------------
+*color1: #59c89e
+*color9: #ED4C7A
+!Verde------------
+*color2:  #c38a5c
+*color10: #A6E179
+!Amarillo---------
+*color3: #bed583
+*color11: #FFDF6B
+!Azul-------------
+*color4: #f1b596
+*color12: #79D2FF
+!Magenta----------
+*color5: #49b69f
+*color13: #BB5D79
+!Cyan-------------
+*color6: #c5c86f
+*color14: #87A8AF
+!Blanco-----------
+*color7: #D5F1F2
+*color15: #E2F1F6
+
